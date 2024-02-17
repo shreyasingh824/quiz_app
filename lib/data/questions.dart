@@ -19,4 +19,31 @@ const questions = [
       'None of the above',
     ],
   ),
+  QuizQuestions(
+    'DDoS stands for _______________',
+    [
+      'Distributed Denial of Service',
+      'Distributed Disc operating Service',
+      'Dynamic Denial of Service',
+      'None of the above',
+    ],
+  ),
+  QuizQuestions(
+    'DDoS stands for _______________',
+    [
+      'Distributed Denial of Service',
+      'Distributed Disc operating Service',
+      'Dynamic Denial of Service',
+      'None of the above',
+    ],
+  ),
+  QuizQuestions(
+    'DDoS stands for _______________',
+    [
+      'Distributed Denial of Service',
+      'Distributed Disc operating Service',
+      'Dynamic Denial of Service',
+      'None of the above',
+    ],
+  ),
 ];

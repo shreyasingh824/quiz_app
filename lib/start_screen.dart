@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:quiz_app/login_page.dart';
 import 'package:quiz_app/question_screen.dart';
 import 'package:quiz_app/signup_page.dart';
+import 'package:quiz_app/results_screen.dart';
 
 class StartScreen extends StatelessWidget {
-  const StartScreen({Key? key}) : super(key: key);
+  const StartScreen(this.startQuiz, {super.key});
+  final void Function() startQuiz;
 
   @override
   Widget build(BuildContext context) {
@@ -92,10 +94,7 @@ class StartScreen extends StatelessWidget {
               SizedBox(height: 20),
               ElevatedButton.icon(
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => QuestionScreen()),
-                  );
+                  startQuiz();
                 },
                 style: ElevatedButton.styleFrom(
                   primary: Colors.blue[900],
